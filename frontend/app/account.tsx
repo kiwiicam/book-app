@@ -5,7 +5,7 @@ import Authscreen from "../screens/Authscreen.jsx"
 
 export default function Account() {
 
-    const backend_url = process.env.BACKEND_URL || "http://192.168.1.237:5000/api"
+    const backend_url = process.env.BACKEND_URL || "http://192.168.56.1:5000/api"
 
     const [data, setData] = useState("Not received yet");
 
