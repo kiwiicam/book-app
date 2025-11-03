@@ -1,7 +1,10 @@
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, Platform } from "react-native";
+import * as Notifications from 'expo-notifications';
+import * as Device from 'expo-device';
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Authscreen from "../screens/Authscreen.jsx"
+import Authscreen from '../screens/AuthScreens/Authscreen.jsx';
+import MainAccountScreen from '../screens/AccountScreens/MainAccount.jsx'
 
 export default function Account() {
 
@@ -9,7 +12,7 @@ export default function Account() {
 
     const [data, setData] = useState("Not received yet");
 
-    const [loggedIn, setLoggedIn] = useState(false);
+    const [loggedIn, setLoggedIn] = useState(true);
 
     useEffect(() => {
 
@@ -22,8 +25,7 @@ export default function Account() {
                 console.error("Error fetching data:", error);
             }
         }
-        fetchData();
-
+        //fetchData();
 
     }, []);
 
@@ -32,7 +34,7 @@ export default function Account() {
     return (
         <View style={{ flex: 1 }}>
             {loggedIn ?
-                <Text>Welcome to your account!</Text>
+                <MainAccountScreen />
                 :
                 <Authscreen />}
 

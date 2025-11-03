@@ -18,7 +18,7 @@ export default function Authscreen() {
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
 
-    const [signUp, setSignUp] = useState(true);
+    const [signUp, setSignUp] = useState(false);
 
     const [visible, setVisible] = useState(false);
 

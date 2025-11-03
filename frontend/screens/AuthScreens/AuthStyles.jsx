@@ -106,6 +106,29 @@ export const styles = StyleSheet.create({
     },
     bottomTextButton: {
         color: '#3b82f6',
-    }
+    },
+    codeText: {
+        fontSize: '18',
+        fontWeight: '500',
+        color: 'rgb(107 114 128)'
+    },
+    verifyBox: {
+        width: '13%',
+        height: 65,
+        borderWidth: 2,
+        borderColor: '#e5e7eb',
+        padding: 8,
+        borderRadius: 12,
+        fontSize: 28,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        borderBottomWidth: 4,
+        borderBottomColor: '#3b82f6',
+    },
+    verifyOuter: {
+        width: '100%',
+        justifyContent: 'space-evenly',
+        flexDirection: 'row'
+    },
 
 });

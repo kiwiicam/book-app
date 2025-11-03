@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "components/MetricBox.jsx", "components/BookBashLogo.jsx"  ]
+, "components/MetricBox.jsx", "components/BookBashLogo.jsx", "app/account.jsx"  ]
 }
